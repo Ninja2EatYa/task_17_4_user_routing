@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from routers.task import router as tr
-from routers.user import router as ur
+from .routers.task import router as tr
+from .routers.user import router as ur
 
 app = FastAPI(swagger_ui_parameters={'tryItOutEnabled': True})
 
